@@ -1,0 +1,16 @@
+name: Annotations
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Run a one-line script
+        run: echo Hello
+      - name: Run a multi-line script
+        run: |
+          echo "::debug::What is happening?"
